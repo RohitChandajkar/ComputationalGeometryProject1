@@ -177,7 +177,7 @@ double Geometry::GeomVector::angleBetweenVectorAndAxis(int axis) const
     double dotProductResult = 0.0;
     double vectorMagnitude = magnitude();
     double axisMagnitude = 1.0;
- 
+
     // x-axis
     if (axis == 0)
     {
@@ -205,7 +205,7 @@ double Geometry::GeomVector::angleBetweenVectorAndAxis(int axis) const
         }
         dotProductResult = z();
     }
- 
+
     double angleRadians = std::acos(dotProductResult / (vectorMagnitude * axisMagnitude));
     // converting radians to degrees
     return angleRadians * (180.0 / M_PI);

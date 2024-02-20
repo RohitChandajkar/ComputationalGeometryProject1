@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../headers/matrix.h"
- 
+
 LinearAlgebra::Matrix::Matrix()
 {
     for (int i = 0; i < 3; i++)
@@ -11,23 +11,23 @@ LinearAlgebra::Matrix::Matrix()
         }
     }
 }
- 
-LinearAlgebra::Matrix::Matrix(double a, double b, double c, double d, double e, double f, double g, double h, double i)
+
+LinearAlgebra::Matrix::Matrix(double e1, double e2, double e3, double e4, double e5, double e6, double e7, double e8, double e9)
 {
-    matrix[0][0] = a;
-    matrix[0][1] = b;
-    matrix[0][2] = c;
-    matrix[1][0] = d;
-    matrix[1][1] = e;
-    matrix[1][2] = f;
-    matrix[2][0] = g;
-    matrix[2][1] = h;
-    matrix[2][2] = i;
+    matrix[0][0] = e1;
+    matrix[0][1] = e2;
+    matrix[0][2] = e3;
+    matrix[1][0] = e4;
+    matrix[1][1] = e5;
+    matrix[1][2] = e6;
+    matrix[2][0] = e7;
+    matrix[2][1] = e8;
+    matrix[2][2] = e9;
 }
- 
+
 double LinearAlgebra::Matrix::element(int row, int col) const
 {
     return matrix[row][col];
 }
- 
+
 LinearAlgebra::Matrix::~Matrix() {}
